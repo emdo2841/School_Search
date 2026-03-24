@@ -25,7 +25,7 @@ const app  = express();
 
 // Option B: Restricted (Recommended)
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "https://findschool-cnc9.vercel.app/", // Your React app URL
+  origin: process.env.FRONTEND_URL || "https://findschool-cnc9.vercel.app", // Your React app URL
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   credentials: true, // Allow cookies/auth headers if needed
 }));
